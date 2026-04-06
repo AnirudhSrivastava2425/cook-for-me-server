@@ -5,7 +5,7 @@ const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 async function generateRecipe(userInput) {
   const systemPrompt = `You are an expert chef AI assistant. 
-When given a list of ingredients and dietary preference, generate a detailed recipe.
+When given a prompt for ingredients or dietary preference, generate a detailed recipe.
 Always respond with ONLY valid JSON in this exact format, no extra text:
 {
   "title": "Recipe name",
